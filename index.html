@@ -8,6 +8,7 @@
 
     <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
     <script>
+
     // Initialize Firebase
     var config = {
         apiKey: "AIzaSyBdUdvMDeKj6Os8g0O2QFcmiYsHaaF1k0U",
@@ -27,8 +28,7 @@
   <body>
     <script>
       function login() {
-        // Log the user in via Twitter
-        var provider = new firebase.auth.TwitterAuthProvider();
+        var provider = new firebase.auth.GoogleAuthProvider();
         firebase.auth().signInWithPopup(provider).catch(function(error) {
           console.log("Error authenticating user:", error);
         });
@@ -54,9 +54,7 @@
     </script>
 
     <div id="firechat-wrapper">
-      <button onclick="login('twitter');">Login with Twitter</button>
+      <button onclick="login('Google');">Login with Google</button>
     </div>
   </body>
 </html>
-
-
