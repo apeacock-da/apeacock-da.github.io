@@ -7,23 +7,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
     <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+    
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-functions.js"></script>
+
     <script>
 
-    // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyBdUdvMDeKj6Os8g0O2QFcmiYsHaaF1k0U",
-        authDomain: "chattycathy-c88df.firebaseapp.com",
-        databaseURL: "https://chattycathy-c88df.firebaseio.com",
-        projectId: "chattycathy-c88df",
-        storageBucket: "chattycathy-c88df.appspot.com",
-        messagingSenderId: "7361304190"
-    };
-    firebase.initializeApp(config);
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBdUdvMDeKj6Os8g0O2QFcmiYsHaaF1k0U",
+            authDomain: "chattycathy-c88df.firebaseapp.com",
+            databaseURL: "https://chattycathy-c88df.firebaseio.com",
+            projectId: "chattycathy-c88df",
+            storageBucket: "chattycathy-c88df.appspot.com",
+            messagingSenderId: "7361304190"
+        };
+        firebase.initializeApp(config);
     </script>
 
     <!-- Firechat -->
-    <link rel="stylesheet" href="https://cdn.firebase.com/libs/firechat/3.0.1/firechat.min.css" />
-    <script src="https://cdn.firebase.com/libs/firechat/3.0.1/firechat.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.firebase.com/libs/firechat/5.9.0/firechat.min.css" />
+    <script src="https://cdn.firebase.com/libs/firechat/5.9.0/firechat.min.js"></script>
+
   </head>
   <body>
     <script>
